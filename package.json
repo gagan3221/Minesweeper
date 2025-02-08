@@ -1,0 +1,24 @@
+{
+  "name": "minesweeper",
+  "version": "1.0.0",
+  "description": "Minesweeper game",
+  "keywords": [
+    "React",
+    "Redux"
+  ],
+  "homepage": "https://github.com/gagan3221/Minesweeper#readme",
+  "bugs": {
+    "url": "https://github.com/gagan3221/Minesweeper/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gagan3221/Minesweeper.git"
+  },
+  "license": "ISC",
+  "author": "Gagan",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  }
+}
