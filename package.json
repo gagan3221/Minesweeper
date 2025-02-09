@@ -4,7 +4,8 @@
   "description": "Minesweeper game",
   "keywords": [
     "React",
-    "Redux"
+    "Redux",
+    "React-Hooks"
   ],
   "homepage": "https://github.com/gagan3221/Minesweeper#readme",
   "bugs": {
@@ -19,7 +20,10 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build" : "webpack --mode=production --node-env=production",
+    "build:dev" : "webpack --mode=development",
+    "build:prod" : "webpack --mode=production --node-env=production"
   },
   "devDependencies": {
     "@babel/cli": "^7.26.4",
