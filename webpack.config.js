@@ -13,7 +13,7 @@ module.exports = {
   plugins: [
     new HTMLWebpackPlugin({
       template: "./public/index.html",
-    })
+    }),
   ],
   module: {
     rules: [
@@ -24,7 +24,18 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ["css-loader"]
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        use:[
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+            }
+          }
+        ]
       }
     ],
   },
